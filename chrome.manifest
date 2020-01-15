@@ -1,0 +1,7 @@
+content zoteroarxivdoiretriever chrome/content/
+
+overaly chrome://zotero/content/zoteroPane.xul chrome://zoteroarxivdoiretriever/content/overlay.xul
+
+locale  zoteroarxivdoiretriever en-US   chome/locale/en-US/
+
+skin    zoteroarxivdoiretriever default chrome/skin/default/zoteroarxivdoiretriever
