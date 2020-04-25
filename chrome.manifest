@@ -1,7 +1,7 @@
-content zoteroarxivdoiretriever chrome/content/
+content zotero-arxiv-doi-retriever chrome/content/
 
-overaly chrome://zotero/content/zoteroPane.xul chrome://zoteroarxivdoiretriever/content/overlay.xul
+overlay chrome://zotero/content/zoteroPane.xul chrome://zotero-arxiv-doi-retriever/content/overlay.xul
 
-locale  zoteroarxivdoiretriever en-US   chome/locale/en-US/
+locale  zotero-arxiv-doi-retriever en-US   locale/en-US/
 
-skin    zoteroarxivdoiretriever default chrome/skin/default/zoteroarxivdoiretriever
+skin    zotero-arxiv-doi-retriever default skin/
