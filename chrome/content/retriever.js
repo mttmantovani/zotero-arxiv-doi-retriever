@@ -41,3 +41,4 @@ else
 {
    alert('Found ' + DOIs.length + ' DOIs for your arXiv papers:\n\n' + s);
 }
+
