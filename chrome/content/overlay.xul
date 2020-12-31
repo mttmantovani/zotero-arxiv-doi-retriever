@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 
-<?xml-stylesheet href="chrome://zotero-arxiv-doi-retriever/skin/overlay.css" type="text/css"?>
+<?xml-stylesheet href="chrome://zotero-arxiv-doi-retriever/chrome/skin/default/overlay.css" type="text/css"?>
 
-<!DOCTYPE window SYSTEM "chrome://zotero-arxiv-doi-retriever/locale/zotero-arxiv-doi-retriever.dtd">
+<!DOCTYPE window SYSTEM "chrome://zotero-arxiv-doi-retriever/chrome/locale/zotero-arxiv-doi-retriever.dtd">
 
 <overlay 
     id="zotero-arxiv-doi-retriever-overlay" 
@@ -21,6 +21,6 @@
     </menupopup>
 
     <!-- Include the main extension logic -->
-    <script src="chrome://zotero/content/include.js"/>
+    <script src="chrome://zotero-arxiv-doi-retriever/content/include.js"/>
     <script src="chrome://zotero-arxiv-doi-retriever/content/retriever.js"/>
 </overlay>

@@ -2,6 +2,6 @@ content zotero-arxiv-doi-retriever chrome/content/
 
 overlay chrome://zotero/content/zoteroPane.xul chrome://zotero-arxiv-doi-retriever/content/overlay.xul
 
-locale  zotero-arxiv-doi-retriever en-US   locale/en-US/
+locale  zotero-arxiv-doi-retriever en-US   chrome/locale/en-US/
 
-skin    zotero-arxiv-doi-retriever default skin/
+skin    zotero-arxiv-doi-retriever default chrome/skin/default/
