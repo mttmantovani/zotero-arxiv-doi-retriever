@@ -1,26 +1,37 @@
 <?xml version="1.0"?>
 
-<?xml-stylesheet href="chrome://zotero-arxiv-doi-retriever/chrome/skin/default/overlay.css" type="text/css"?>
-
-<!DOCTYPE window SYSTEM "chrome://zotero-arxiv-doi-retriever/chrome/locale/zotero-arxiv-doi-retriever.dtd">
+<!DOCTYPE window SYSTEM "chrome://zotero-arxiv-doi-retriever/locale/overlay.dtd">
 
 <overlay 
     id="zotero-arxiv-doi-retriever-overlay" 
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
+    <!-- Include the main extension logic -->
+    <script src="chrome://zotero-arxiv-doi-retriever/content/include.js"/>
+    <script src="chrome://zotero-arxiv-doi-retriever/content/retriever.js"/>
+
+    <stringbundleset id="stringbundleset">
+        <stringbundle
+            id="doi-retriever-bundle"
+            src="chrome://zotero-arxiv-doi-retriever/locale/zotero-arxiv-doi-retriever.properties"/>
+    </stringbundleset>
+        
     <popup
         id="zotero-itemmenu">
         <menu class="menu-iconic" id="zotero-itemmenu-doi-retriever-menu" label="&doi-retriever-menu-label;">
-            
+            <menupopup id="zotero-itemmenu-doi-retriever-menupopup">
+                <menuitem
+                    id="zotero-itemmenu-doi-retriever-test"
+                    label="&doi-retriever-menu-check-label;"
+                    oncommand="Zotero.DOIRetriever.checkItem()"/>
+            </menupopup>
         </menu>
     </popup>
 
 
     <menupopup id="menu_ToolsPopup">
-        <menuitem label="&zotero-arxiv-doi-retriever.name;" oncommand="Zotero.DOIRetriever.scan()"/>
+        <menuitem label="&doi-retriever-tools-label;" oncommand="Zotero.DOIRetriever.scan()"/>
     </menupopup>
 
-    <!-- Include the main extension logic -->
-    <script src="chrome://zotero-arxiv-doi-retriever/content/include.js"/>
-    <script src="chrome://zotero-arxiv-doi-retriever/content/retriever.js"/>
+
 </overlay>

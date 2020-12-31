@@ -1,26 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-
-  <Description about="urn:mozilla:install-manifest">
-    <em:id>mattia.mantovani@gmail.com</em:id>
-    <em:creator>Mattia Mantovani</em:creator>
-    <em:homepageURL>https://github.com/mttmantovani/zotero-arxiv-doi-retriever</em:homepageURL>
-    <em:name>Zotero arXiv DOI Retriever</em:name>
-    <em:version>0.0.1b</em:version>
-    <em:description>Looks for published versions of arXiv preprints in a Zotero library.</em:description>
-    <em:type>2</em:type>
-
-    <!-- Requires Zotero -->
-    <em:requires>
-        <Description>
-            <em:id>zotero@chnm.gmu.edu</em:id>
-            <em:name>Zotero</em:name>
-            <em:homepageURL>http://www.zotero.org</em:homepageURL>
-            <em:minVersion>2.1</em:minVersion>
-            <em:maxVersion>5.0.*</em:maxVersion>
-        </Description>
-    </em:requires>
-
-  </Description>
-</RDF>
+<?xml version="1.0"?>
+<RDF:RDF
+    xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+    xmlns:NC="http://home.netscape.com/NC-rdf#"
+    xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <RDF:Description
+        RDF:about="urn:mozilla:install-manifest"
+        em:id="mattia.mantovani@gmail.com"
+        em:name="Zotero arXiv DOI Retriever"
+        em:version="0.0.1b"
+        em:type="2"
+        em:creator="Mattia Mantovani"
+        em:description="Looks for published versions of arXiv preprints in a Zotero library."
+        em:homepageURL="https://github.com/mttmantovani/zotero-arxiv-doi-retriever"
+        em:updateURL="https://raw.githubusercontent.com/mttmantovani/zotero-arxiv-doi-retriever/master/update.rdf">
+        <em:type>2</em:type>
+        <em:targetApplication>
+            <Description>
+                <em:id>zotero@chnm.gmu.edu</em:id>
+                <em:minVersion>5.0</em:minVersion>
+                <em:maxVersion>5.*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+        <em:targetApplication>
+            <Description>
+                <em:id>mattia.mantovani@gmail.com</em:id>
+                <em:minVersion>5.0</em:minVersion>
+                <em:maxVersion>5.*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+    </RDF:Description>
+</RDF:RDF>

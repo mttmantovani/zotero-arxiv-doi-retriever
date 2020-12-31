@@ -1,0 +1,6 @@
+<!ENTITY zotero-arxiv-doi-retriever.name "arXiv DOI retriever">
+
+<!ENTITY doi-retriever-menu-label "DOI retriever">
+<!ENTITY doi-retriever-menu-check-label "Check for DOI">
+<!ENTITY doi-retriever-tools-label "Check preprints...">
+
