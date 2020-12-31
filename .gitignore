@@ -2,3 +2,5 @@
 .ipynb_checkpoints/*
 pyzotero/pyzotero-doi-retriever-private.ipynb
 pyzotero/pyzotero-doi-retriever-private.py
+
+*.xpi

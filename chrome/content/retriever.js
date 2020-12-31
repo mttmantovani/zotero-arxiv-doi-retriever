@@ -5,7 +5,6 @@ if (typeof Zotero === 'undefined') {
 Zotero.DOIRetriever = {};
 
 // Initialization of plugin
-
 Zotero.DOIRetriever.init = function() {
     Zotero.DOIRetriever.resetState("initial");
 
@@ -18,6 +17,8 @@ Zotero.DOIRetriever.init = function() {
     }, false);
 };
 
+// Notifier
+Zotero.DOIRetriever.notifierCallback...
 
 // Checks item
 Zotero.DOIRetriever.checkItem = function() {
